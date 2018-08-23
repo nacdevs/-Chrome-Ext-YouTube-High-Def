@@ -1,0 +1,21 @@
+{
+   "name": "HD Youtube",
+   "version": "1.0",
+   "description": "Extension!",
+   "permissions": [
+            "storage"
+          ],
+  "content_scripts": [{
+  "matches": [
+    "https://www.youtube.com/*"
+  ],
+  "js": ["scriptHD.js"],
+  "run_at": "document_end"
+}],
+   "background": {
+     "scripts": ["scriptHD.js"],
+     "persistent": true
+   },
+"options_page": "settings.html",
+   "manifest_version": 2
+ }
